@@ -1,0 +1,12 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.pdf
+*.dvi
+*.ps
+*.out
+*~
+*.backup
+*synctex*
+auto*
