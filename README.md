@@ -20,6 +20,7 @@ Contents
     sinkhorn.m             implements the Sinkhorn-Knopp method
     sinkhorn_newton.m      implements the proposed Sinkhorn-Newton method
     MNISTGroundMetric.m    generates a cost-metric used in driver_parameters
+    loadMNISTImages.m      loads the images from the MNIST database
 
 ##### Dependencies
 `driver_parameters.m` needs images from the MNIST database which can be obtained from <http://yann.lecun.com/exdb/mnist/>
