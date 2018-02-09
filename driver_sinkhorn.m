@@ -18,11 +18,11 @@ check = inf;
 tol = 1e-13;
 
 % solve once to get optimal plan and cost
-[piopt] = sinkhorn_newton(img1(:),img2(:),cost,gamma,maxiter,check,tol);
+[piopt] = sinkhorn_newton_primal(img1(:),img2(:),cost,gamma,maxiter,check,tol);
 optcost = sum(sum(cost.*piopt));
 
 % solve optimal transport problem
-[pi,alpha,beta,errors2,time2,cgiters] = sinkhorn_newton(img1(:),img2(:),cost,gamma,maxiter,check,tol,'optplan',piopt,'optcost',optcost);
+[pi,errors2,time2,cgiters] = sinkhorn_newton_primal(img1(:),img2(:),cost,gamma,maxiter,check,tol,'optplan',piopt,'optcost',optcost);
 [~,v,w,errors,time] = sinkhorn(img1(:),img2(:),cost,gamma,maxiter,check,tol,'optplan',piopt,'optcost',optcost);
 
 % plot

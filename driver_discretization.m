@@ -13,7 +13,7 @@ for n = [1000 2000 4000 8000]
     nu = nu*(n-1)/sum(nu);
     cost = (x-x').^2;
     
-    [pi,alpha,beta,errors,time,cgiters] = sinkhorn_newton(mu,nu,cost,gamma,maxiter,check,tol);
+    [pi,errors,time,cgiters] = sinkhorn_newton_primal(mu,nu,cost,gamma,maxiter,check,tol);
 
     figure(1)
     semilogy(cgiters,errors.mu); hold on; grid on;
