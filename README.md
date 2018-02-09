@@ -1,6 +1,6 @@
 # sinkhornnewton
 
-This repository contains the MATLAB code that generates the figures in the paper "A Sinkhorn-Newton method for entropic optimal transport".
+This repository contains the MATLAB code that generates the figures in the paper "A Sinkhorn-Newton method for entropic optimal transport" available at <https://arxiv.org/abs/1710.06635>.
 
 ##### Authors:
 - Christoph Brauer    (<ch.brauer@tu-braunschweig.de>)
