@@ -17,10 +17,11 @@ Contents
     driver_discretization.m  test script to generate figure 3
 
 ##### Routines called by the drivers:
-    sinkhorn.m             implements the Sinkhorn-Knopp method
-    sinkhorn_newton.m      implements the proposed Sinkhorn-Newton method
-    MNISTGroundMetric.m    generates a cost-metric used in driver_parameters
-    loadMNISTImages.m      loads the images from the MNIST database
+    sinkhorn.m                implements the Sinkhorn-Knopp method
+    sinkhorn_newton.m         implements the proposed Sinkhorn-Newton method
+    sinkhorn_newton_primal.m  the same using only primal variables
+    MNISTGroundMetric.m       generates a cost-metric used in driver_parameters
+    loadMNISTImages.m         loads the images from the MNIST database
 
 ##### Dependencies
 `driver_parameters.m` needs images from the MNIST database which can be obtained from <http://yann.lecun.com/exdb/mnist/>
